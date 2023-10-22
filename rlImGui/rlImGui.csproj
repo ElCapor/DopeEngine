@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>rlImGui_cs</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Raylib ImGui Inteface In C#</Title>
+    <Authors>Chris Dill, Jeffery Myers</Authors>
+    <Description>Bindings to use ImGui.net with raylib-cs</Description>
+    <Copyright>2023 Jeffery Myers</Copyright>
+    <PackageProjectUrl>https://github.com/raylib-extras/rlImGui-cs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/raylib-extras/rlImGui-cs</RepositoryUrl>
+    <PackageId>rlImgui-cs</PackageId>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <PackageTags>raylib;ImGui;ImGui.NET;gamedev;GUI; Imedate Mode;</PackageTags>
+    <PackageReleaseNotes>Inital Release</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ImGui.NET" Version="1.89.9.2" />
+    <PackageReference Include="Raylib-cs" Version="4.5.0.4" />
+  </ItemGroup>
+
+</Project>
